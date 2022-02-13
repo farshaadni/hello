@@ -5,6 +5,18 @@
       <p class="hero__tagline">Deploy your wibesite in less than 60 seconds</p>
       <a href="/" class="btn btn--accent btn--stretched">GET STARTED</a>
     </header>
-    <div><img class="hero__image" src="images/banner.png" alt="" /></div>
+    <div>
+      <picture>
+        <source
+          type="image/webp"
+          srcset="images/banner@2x.webp 2x, images/banner.webp 1x"
+        />
+        <source
+          type="image/png"
+          srcset="images/banner@2x.png 2x, images/banner.png 1x"
+        />
+        <img class="hero__image" src="images/banner.png" alt="" />
+      </picture>
+    </div>
   </div>
 </section>
